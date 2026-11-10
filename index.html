@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remnexa AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-layout">
+
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <img src="logo.png" alt="Remnexa AI">
+                    <h2>Remnexa AI</h2>
+                </div>
+
+              <!--  <button id="newChatBtn" type="button">
+                    + New Chat
+                </button>-->
+            </div>
+
+            <!--<h3 class="history-heading">Recent Chats</h3>
+
+            <div id="conversationList" class="conversation-list">
+          </div>-->
+
+        </aside>
+
+        <!-- RIGHT CHAT AREA -->
+        <main class="chat-area">
+
+            <div class="chat-header">
+                <h2>Remnexa AI</h2>
+            </div>
+
+            <div id="chatbox">
+
+            </div>
+
+            <div id="D1">
+                <input
+                    id="userInput"
+                    type="text"
+                    placeholder="Type a message... OR speak"
+                >
+
+                <button
+                    id="micBtn"
+                    type="button"
+                    onclick="startVoiceInput()"
+                >
+                    🎤
+                </button>
+
+                <button id="sendBtn" type="button">
+                    Send
+                </button>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

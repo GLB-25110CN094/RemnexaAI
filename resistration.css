@@ -1,0 +1,200 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page background */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px 15px;
+
+    background: linear-gradient(
+        135deg,
+        rgb(249, 173, 239),
+        #8bcaea
+    );
+}
+
+/* Registration card */
+body > h2,
+body > form,
+body > #message,
+body > p {
+    position: relative;
+}
+
+/* Centered glass card */
+body {
+    flex-direction: column;
+}
+
+body > h2,
+#registerForm,
+#message,
+body > p {
+    width: 420px;
+    max-width: 100%;
+}
+
+body > h2 {
+    padding: 30px 30px 10px;
+    background: rgba(255, 255, 255, 0.32);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-bottom: none;
+    border-radius: 18px 18px 0 0;
+
+    color: #8A2BE2;
+    text-align: center;
+    font-size: 27px;
+}
+
+/* Form area */
+#registerForm {
+    padding: 20px 30px 30px;
+
+    background: rgba(255, 255, 255, 0.32);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-top: none;
+    border-bottom: none;
+}
+
+/* Labels */
+#registerForm label {
+    display: block;
+    margin-bottom: 8px;
+
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Inputs */
+#registerForm input {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 20px;
+
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(100, 80, 120, 0.25);
+    border-radius: 9px;
+
+    color: #333;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#registerForm input:focus {
+    border-color: #8A2BE2;
+    box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.12);
+}
+
+#registerForm input::placeholder {
+    color: #888;
+}
+
+/* Sign up button */
+#registerForm button {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin-top: 5px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: linear-gradient(90deg, #00C6FF, #8A2BE2);
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+    font-family: inherit;
+
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#registerForm button:hover {
+    background: linear-gradient(90deg, #8A2BE2, #00C6FF);
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.2);
+    transform: translateY(-1px);
+}
+
+/* Remove default line breaks from layout */
+#registerForm br {
+    display: none;
+}
+
+/* Status message */
+#message {
+    padding: 0 30px;
+    background: rgba(255, 255, 255, 0.32);
+    color: #8A2BE2;
+    font-size: 13px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+/* Login link area */
+body > p:last-of-type {
+    padding: 15px 25px 25px;
+
+    background: rgba(255, 255, 255, 0.32);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-top: none;
+    border-radius: 0 0 18px 18px;
+
+    color: #555;
+    text-align: center;
+    font-size: 13px;
+}
+
+body > p a {
+    color: #7626c9;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+body > p a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    body > h2 {
+        padding: 25px 20px 10px;
+        font-size: 24px;
+    }
+
+    #registerForm {
+        padding: 20px;
+    }
+
+    #message {
+        padding: 0 20px;
+    }
+
+    body > p:last-of-type {
+        padding: 15px 15px 22px;
+    }
+}
